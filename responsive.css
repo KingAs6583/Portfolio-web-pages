@@ -1,0 +1,48 @@
+@media screen and (max-width: 720px) {
+    
+    header>nav {
+        height: 50px;
+        width: 100%;
+        top: 0;
+        overflow: visible;
+    }
+    .menubar{
+        overflow: visible;
+    }
+    ul.menubar li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: unset;
+    }
+    
+    
+    ul.menubar>li>a {
+        display: block;
+        color: green;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .icon {
+        visibility: visible
+    }
+    .background-image {
+        top: 60%;
+    }
+
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .card{
+        border-radius: 20px;
+    }
+  }
+  

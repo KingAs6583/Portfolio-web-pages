@@ -1,25 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
+/* cyan #00FFFF Teal #008080  */
 * {
     margin: 0;
     padding: 0;
 }
 
-header>nav>ul {
-    list-style: none;
-    overflow: hidden;
+header>nav {
     background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
 }
 
-header>nav>ul li {
+ul.menubar li {
     list-style: none;
-    margin: 0 13px;
-    padding: 15px 15px 5px 15px;
-    float: right;
+    margin: 0;
+    padding: 0;
+    float: right
 }
 
-ul>li>a{
+
+ul.menubar>li>a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+}
+
+ul.menubar>li>a:hover {
+    background-color: #98d7c2;
     color: white;
 }
 
@@ -27,11 +41,214 @@ ul>li>a{
     white-space: nowrap;
     text-decoration: dotted;
     font-family: 'Cinzel Decorative', cursive;
-    background: linear-gradient(to bottom, aqua, #08f2);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;    
+    color: cyan;
     text-transform: uppercase;
     font-weight: bold;
     float: left;
+    margin: 10px 15px;
+}
+
+.icon {
+    visibility: hidden;
+}
+
+body {
+    background-image: linear-gradient(to right, cyan, teal);
+}
+
+.background-image {
+    background-image: url("./Assets/Images/Background/Website\ page.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    height: 100vh;
+}
+
+section {
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 90%;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* creation of card holder */
+/* Remove extra left and right margins, due to padding */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 10%;
+}
+
+h1 {
+    margin: 15px;
+}
+
+/* circle the images */
+div.card>img {
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+}
+
+.container {
+    width: 90%;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+}
+
+section>div>img {
+    width: 10%;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: #48bcd1;
+}
+
+.css {
+    width: 80%;
+    background-color: #c0dcec;
+}
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.php {
+    width: 60%;
+    background-color: #808080;
+}
+
+section {
+    width: 90%;
+}
+
+.cover {
+    background-color: #f2f2f2;
+    margin: auto;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+/* shadow effect with round corner */
+.section-holder {
+    background-color: #f2f2f2;
+    margin: auto;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+/* center the flex items inward */
+ul.contact-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+div.contact-icon {
+    text-align: center;
+    margin: auto;
+}
+
+div.contact-icon>a {
+    text-decoration: none;
+    color: black;
+    word-wrap: break-word;
+}
+
+form {
+    display: flex;
+    background-color: #c0dcec;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+    border-radius: 25px;
+    width: 50%;
+    margin: auto;
+}
+
+/* form input field changes */
+input[type=text],
+[type=email] {
+    background-color: #eee;
+    border: solid 1px #00538C;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 50px;
+    width: 90%;
+}
+
+/*stylish button with round corner*/
+form>input[type=submit],
+button {
+    border-radius: 20px;
+    background-color: #00538C;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    border: none;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: #f1f1f1;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer>div {
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
 }
