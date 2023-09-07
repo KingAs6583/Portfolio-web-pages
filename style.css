@@ -23,10 +23,19 @@ ul.menubar li {
 }
 
 
-ul.menubar>li>a {
+ul.menubar>div.menu-item>li>a {
     display: block;
     color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ul.menubar>li>div>a {
+    display: none;
+    color: #f2f2f2;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -87,6 +96,7 @@ section {
     justify-content: center;
     align-items: center;
     overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 /* Clear floats after the columns */
@@ -116,12 +126,12 @@ div.card>img {
     height: 25%;
 }
 
-.container {
+/* .container {
     width: 90%;
     background-color: #f2f2f2;
     text-align: center;
     margin: auto;
-}
+} */
 
 section>div>img {
     width: 10%;
@@ -134,25 +144,7 @@ section>div>img {
     color: white;
 }
 
-.html {
-    width: 90%;
-    background-color: #48bcd1;
-}
 
-.css {
-    width: 80%;
-    background-color: #c0dcec;
-}
-
-.js {
-    width: 65%;
-    background-color: #f44336;
-}
-
-.php {
-    width: 60%;
-    background-color: #808080;
-}
 
 section {
     width: 90%;
@@ -182,6 +174,7 @@ ul.contact-list {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 div.contact-icon {
@@ -235,6 +228,18 @@ button {
     border: none;
 }
 
+button:hover,
+form>input[type=submit]:hover {
+    background-color: #f1f1f1;
+    color: #00538C;
+    border: 1px solid #00538C;
+    cursor: pointer;
+}
+
+button>a:hover {
+    color: black;
+}
+
 footer {
     display: flex;
     background-color: black;
@@ -251,4 +256,46 @@ footer>div {
 a {
     text-decoration: none;
     color: #f2f2f2;
+}
+
+
+div.part-right,
+div.part-left {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+td>i {
+    font-size: 12vh;
+}
+
+td {
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+}
+
+div.background-image>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 14%;
+}
+
+div.background-image>div>h2 {
+    width: 30%;
+    margin-left: 2%;
+    color: black;
+}
+
+div.background-image>div>button {
+    margin-top: 20px;
+}
+
+.active {
+    background-color: #98d7c2;
 }

@@ -6,3 +6,8 @@
 [teal tone](https://www.canva.com/colors/color-meanings/teal/)  
 [cyone tone](https://www.canva.com/colors/color-meanings/cyan/)  
 [website reference](https://www.w3schools.com/howto/tryit.asp?filename=tryw3css_templates_portfolio&stacked=h)  
+[language icons](https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css)  
+[normal icons](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)  
+[prompt of bard about](https://g.co/bard/share/26454148de51)    
+[app radar](https://appradar.com/blog/android-app-screenshot-sizes-and-guidelines-for-google-play)  
+[media query size](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/)  

@@ -11,6 +11,7 @@
     <link type="text/css" rel="stylesheet" href="./style.css" />
     <link type="text/css" rel="stylesheet" href="./responsive.css" />
     <title>AS Android Developer</title>
+    <!-- <script src="./script.js"></script> -->
 
 </head>
 
@@ -19,21 +20,26 @@
     <header>
         <nav>
             <ul class="menubar">
+                <div id="logo">
+                    <h3>K I N G &nbsp; AS</h3>
+                </div>
+
                 <li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    <div>
+                        <a class="icon" onclick="showMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
                 </li>
-                <li><a href="#contact">Contact </a></li>
-                <li><a href="#about">About </a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#">Home</a></li>
+                <div class="menu-item">
+                    <li onclick="showMenu()"><a href="#contact">Contact </a></li>
+                    <li onclick="showMenu()"><a href="#about">About </a></li>
+                    <li onclick="showMenu()"><a href="#skills">Skills</a></li>
+                    <li onclick="showMenu()"><a href="#project">Projects</a></li>
+                    <li class="active" onclick="showMenu()"><a href="#">Home</a></li>
+                </div>
             </ul>
 
-            <div id="logo">
-                <h3>K I N G &nbsp; AS</h3>
-            </div>
 
         </nav>
     </header>
@@ -41,10 +47,12 @@
     <main>
 
         <div class="background-image">
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam, eius similique commodi id
-                officiis iste qui, voluptate, nihil voluptatibus eligendi sequi at quia praesentium sunt nisi quaerat
-                repellat dolor.
-            </p> -->
+            <div>
+                <h2>"Trainee developer with a passion for creating beautiful and functional mobile and web
+                    applications."
+                </h2> <br> <br>
+                <button>Download</button>
+            </div>
         </div>
 
         <section id="project">
@@ -56,7 +64,7 @@
                         <img src="./Assets/Images/Logo/projects/ic_launcher-playstore.png" />
                         <p>It is a task management and link saver app which is use to stay organized and manage
                             day-to-day tasks</p> <br>
-                        <button type="button">
+                        <button>
                             <a href="https://play.google.com/store/apps/details?id=com.king_as.todolistandlinksaver"
                                 target="_blank">view </a>
                         </button>
@@ -69,7 +77,7 @@
                         <img src="./Assets/Images/Logo/projects/PicsArt_10-17-12.42.25.jpg" />
                         <p>This App help user to write numbers in words and also help in writing deposite slips</p>
                         <br><br>
-                        <button type="button">
+                        <button>
                             <a href="https://play.google.com/store/apps/details?id=com.king_as.numbertowords"
                                 target="_blank">view </a>
                         </button>
@@ -83,7 +91,7 @@
                         <p>This app help to manual calculate GST and use to cross check the calculation of GST Amount in
                             any Invoice</p>
                         <br>
-                        <button type="button">
+                        <button>
                             <a href="https://play.google.com/store/apps/details?id=com.king_as.gstcalculator"
                                 target="_blank">view </a>
                         </button>
@@ -95,36 +103,62 @@
         <section id="skills">
             <h1>My Skills</h1>
             <div class="section-holder">
-                <p>HTML</p> <i class="devicon-html5-plain-wordmark colored" style="font-size: 34px;"></i>
-                <div class="container">
-                    <div class="skills html">90%</div>
-                </div>
+                <table>
 
-                <p>CSS</p>
-                <div class="container">
-                    <div class="skills css">80%</div>
-                </div>
+                    <tr>
+                        <td><i class="devicon-html5-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-css3-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-javascript-plain colored">&nbsp;</i></td>
+                        <td><i class="devicon-python-plain-wordmark colored" style="color: blue">&nbsp;</i></td>
+                    </tr>
+                    <tr>
+                        <td> <i class="devicon-java-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-postgresql-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-linux-plain colored">&nbsp;</i></td>
+                        <td><i class="devicon-cplusplus-line-wordmark colored">&nbsp;</i> </td>
+                    </tr>
+                    <tr>
+                        <td><i class="devicon-kotlin-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-c-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-android-plain-wordmark colored">&nbsp;</i></td>
+                        <td><i class="devicon-bash-plain">&nbsp;</i></td>
+                    </tr>
 
-                <p>JavaScript</p>
-                <div class="container">
-                    <div class="skills js">65%</div>
-                </div>
-
-                <p>PHP</p>
-                <div class="container">
-                    <div class="skills php">60%</div>
-                </div>
+                </table>
             </div>
         </section>
 
         <section id="about">
             <h1>About</h1>
             <div class="section-holder">
-                <img src="/Assets/Images/Logo/Adobe_Express_AS_logo.png" alt="">
+                <!-- <img src="/Assets/Images/Logo/Adobe_Express_AS_logo.png" alt=""> -->
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, eligendi voluptas ratione animi odio
-                    aliquam. Saepe accusantium nihil consequuntur, tenetur explicabo dolor quia magnam, ullam quo neque
-                    itaque dignissimos consequatur.
+                    Hi, I'm Abubkar Siddiq. I'm a recent BCA graduate with a passion for Android and front end
+                    development.
+                    I'm always looking for new challenges and opportunities to learn and grow. <br> <br>
+
+                    I have develope android apps in which one of my have servering more than 5000 users and written some
+                    script to easy my task with linux.
+                    <br> <br>
+
+                    I'm proficient in Java, JavaScript, HTML, CSS, and any programming Language with OPPs concept. I'm
+                    also familiar with Android Studio and
+                    other development tools. <br><br>
+
+                    I'm a quick learner and I'm always eager to take on new challenges. I'm confident that I have the
+                    skills and experience to be a valuable asset to your team.<br><br>
+
+                    Here are some of my skills and accomplishments:<br><br>
+                <ul style="margin-left: 50px;">
+                    <li>Developed an Android app that helped users organized there tasks</li>
+                    <li>Proficient in Java, JavaScript, HTML, CSS</li>
+                    <li>Familiar with Android Studio and other development tools</li>
+                    <li>Quick learner and eager to take on new challenges</li>
+                    <li>Problem breaker</li>
+                </ul><br><br>
+                I'm looking for a position where I can use my skills and experience to make a positive impact. I'm
+                also eager to learn new things and grow as a developer.
+                <br><br>
                 </p>
             </div>
         </section>
@@ -183,7 +217,7 @@
                 <i class="fa fa-envelope" style="font-size:14px">&nbsp;Email</i>
             </a> <br> <br>
             <a href="https://github.com/KingAs6583/KingAs6583" target="_blank">
-                <i class="fa fa-github" style="font-size:14px">&nbsp;KingAs6583</i>
+                <i class="fa fa-github" style="font-size:14px">&nbsp;Github</i>
             </a> <br> <br>
             <a href="https://www.linkedin.com/in/abubakar-siddiq65" target="_blank">
                 <i class="fa fa-linkedin-square" style="font-size:14px">&nbsp;LinkedIn</i>
@@ -192,17 +226,17 @@
         </div>
         <div> <br>
             <h2>About</h2> <br>
-            <p>I am a software and android developer</p>
+            <p>I am a Software and Android Developer</p>
         </div>
         <div> <br>
-            <h2>Service</h2> <br> 
+            <h2>Service</h2> <br>
             <i class="fa fa-android">&nbsp;Android APPs</i> <br> <br>
-            <i class="fa fa-chrome">&nbsp; Web Pages</i> <br><br> 
+            <i class="fa fa-chrome">&nbsp; Web Pages</i> <br><br>
             <h2></h2> <br><br>
         </div>
     </footer>
 
-    <script src="/script.js" type="text/javascricpt"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
