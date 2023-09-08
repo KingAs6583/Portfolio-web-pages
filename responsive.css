@@ -87,3 +87,34 @@
 
 
 }
+
+/* Responsive columns */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .column {
+        width: 30%;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .card {
+        border-radius: 20px;
+    }
+
+    td>i {
+        font-size: 9vh;
+    }
+
+    div.background-image>div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40%;
+    }
+
+    div.background-image>div>h2 {
+        width: 50%;
+        margin-left: 2%;
+        color: black;
+    }
+
+}
