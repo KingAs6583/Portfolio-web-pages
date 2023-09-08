@@ -46,6 +46,6 @@ function mailTo() {
   let name = form.elements[0].value;
   let subject = form.elements[1].value;
   let message = form.elements[2].value;
-  let link = `mailto:Abubakar.Siddiq6583@gmail.com?subject=${subject}&body=${name+"\n"+message}`;
+  let link = `mailto:Abubakar.Siddiq6583@gmail.com?subject=${subject}&body=${name+message}`;
   window.location.href=link;
 }
