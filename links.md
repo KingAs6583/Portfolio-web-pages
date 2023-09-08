@@ -11,3 +11,5 @@
 [prompt of bard about](https://g.co/bard/share/26454148de51)    
 [app radar](https://appradar.com/blog/android-app-screenshot-sizes-and-guidelines-for-google-play)  
 [media query size](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/)  
+[bard chat on flex](https://bard.google.com/u/1/share/4ee7d5833d1e)  
+[bard chat on js google form](https://bard.google.com/u/1/share/273d6fb570bf)  

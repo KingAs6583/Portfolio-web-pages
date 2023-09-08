@@ -8,6 +8,7 @@ window.addEventListener("resize", function () {
   }
 });
 
+
 const ul = document.querySelector("ul.menubar");
 
 function showMenu() {
@@ -38,4 +39,13 @@ function highlightActiveMenuItem() {
   if (previousActive) {
     previousActive.classList.remove("active");
   }
+}
+
+function mailTo() {
+  let form = document.getElementById("mailForm");
+  let name = form.elements[0].value;
+  let subject = form.elements[1].value;
+  let message = form.elements[2].value;
+  let link = `mailto:Abubakar.Siddiq6583@gmail.com?subject=${subject}&body=${name+"\n"+message}`;
+  window.location.href=link;
 }
