@@ -46,6 +46,21 @@ function mailTo() {
   let name = form.elements[0].value;
   let subject = form.elements[1].value;
   let message = form.elements[2].value;
-  let link = `mailto:Abubakar.Siddiq6583@gmail.com?subject=${subject}&body=${name+message}`;
-  window.location.href=link;
+  const maxWidth = 600;
+  let link;
+  if (window.innerWidth <= maxWidth) {
+    link = `mailto:Abubakar.Siddiq6583@gmail.com?subject=${subject}&body=${name + message}`;
+  } else {
+    link = `mailto:Abubakar.Siddiq6583@gmail.com?subject=${subject}`;
+  }
+  window.location.href = link;
+}
+
+let ua = navigator.userAgent.toLowerCase();
+let form = document.getElementById("mailForm");
+
+if (ua.indexOf('safari') != -1) {
+  form.elements[0].placeholder = "Send mail not work properly in safari. please use gmail";
+  form.elements[1].disabled = true;
+  form.elements[2].disabled = true;
 }
